@@ -45,7 +45,6 @@ This capstone project implements an end-to-end computer system across three main
 │   ├── box_emulator_result.png     # CPU Emulator verification running Box.hack
 │   └── Capstone_Report_Hitarth_2501730430.pdf
 ├── Capstone_Report_Hitarth_2501730430.pdf
-├── generate_pdf.py
 └── README.md
 ```
 
