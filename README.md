@@ -39,9 +39,13 @@ This capstone project implements an end-to-end computer system across three main
 │   │   ├── cpu_test_result.png     # Hardware Simulator verification for CPU.hdl
 │   │   ├── memory_test_result.png  # Hardware Simulator verification for Memory.hdl
 │   │   └── computer_test_result.png# Hardware Simulator verification for Computer.hdl
-│   ├── Part_B/                     # Part B - Python Assembler
+│   ├── Part_B/                     # Part B - Python Assembler & Test Programs
 │   │   ├── assembler.py            # Two-pass Python assembler
-│   │   └── symbols.txt             # Symbol table export (Labels, Variables, Predefined)
+│   │   ├── symbols.txt             # Symbol table export (Labels, Variables, Predefined)
+│   │   ├── Add.asm & Add.hack      # Arithmetic addition test program & output
+│   │   ├── Max.asm & Max.hack      # Maximum comparison test program & output
+│   │   ├── Rect.asm & Rect.hack    # Rectangle screen draw test program & output
+│   │   └── Pong.asm & Pong.hack    # Pong game benchmark test program & output
 │   ├── Part_C/                     # Part C - Box Program
 │   │   ├── Box.asm                 # Interactive box application in Hack assembly
 │   │   ├── Box.hack                # Assembled 16-bit binary machine code
