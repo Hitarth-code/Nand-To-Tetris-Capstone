@@ -32,17 +32,20 @@ This capstone project implements an end-to-end computer system across three main
 
 ```
 ├── capstone/
-│   ├── CPU.hdl                     # Hack CPU implementation
-│   ├── Memory.hdl                  # Complete Hack memory space (RAM, Screen, Keyboard)
-│   ├── Computer.hdl                # Top-level computer chip (CPU + Memory + ROM32K)
-│   ├── assembler.py                # Two-pass Python assembler
-│   ├── Box.asm                     # Box drawing application in Hack assembly
-│   ├── Box.hack                    # 16-bit binary machine code assembled from Box.asm
-│   ├── symbols.txt                 # Symbol table export (Labels, Variables, Predefined)
-│   ├── memory_test_result.png      # Hardware Simulator test verification for Memory.hdl
-│   ├── cpu_test_result.png         # Hardware Simulator test verification for CPU.hdl
-│   ├── computer_test_result.png    # Hardware Simulator test verification for Computer.hdl
-│   ├── box_emulator_result.png     # CPU Emulator verification running Box.hack
+│   ├── Part_A/                     # Part A - Build the Computer (HDL Chips)
+│   │   ├── CPU.hdl                 # Hack CPU implementation
+│   │   ├── Memory.hdl              # Complete Hack memory space (RAM, Screen, Keyboard)
+│   │   ├── Computer.hdl            # Top-level computer chip (CPU + Memory + ROM32K)
+│   │   ├── cpu_test_result.png     # Hardware Simulator verification for CPU.hdl
+│   │   ├── memory_test_result.png  # Hardware Simulator verification for Memory.hdl
+│   │   └── computer_test_result.png# Hardware Simulator verification for Computer.hdl
+│   ├── Part_B/                     # Part B - Python Assembler
+│   │   ├── assembler.py            # Two-pass Python assembler
+│   │   └── symbols.txt             # Symbol table export (Labels, Variables, Predefined)
+│   ├── Part_C/                     # Part C - Box Program
+│   │   ├── Box.asm                 # Interactive box application in Hack assembly
+│   │   ├── Box.hack                # Assembled 16-bit binary machine code
+│   │   └── box_emulator_result.png # CPU Emulator verification running Box.hack
 │   └── Capstone_Report_Hitarth_2501730430.pdf
 ├── Capstone_Report_Hitarth_2501730430.pdf
 └── README.md
@@ -55,7 +58,7 @@ This capstone project implements an end-to-end computer system across three main
 ### 1. Running the Assembler
 To assemble `Box.asm` into `Box.hack` and generate `symbols.txt`:
 ```bash
-python capstone/assembler.py capstone/Box.asm
+python capstone/Part_B/assembler.py capstone/Part_C/Box.asm
 ```
 
 ### 2. Simulating the Box in CPU Emulator
